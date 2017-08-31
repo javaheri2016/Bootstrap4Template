@@ -1,0 +1,108 @@
+@import "bootstrap";
+@import "bootstrap-grid";
+@import "bootstrap-reboot";
+@import "awesome/font-awesome";
+
+$primary-color: #4ad02a;
+$dark: darken($primary-color, 15%);
+$blue: #007bff;
+$primary-text: #555c61;
+$primary-px: 20px;
+$small-px: 10px;
+$big-px: 35px;
+
+
+.card {
+    padding: $primary-px;
+    margin: $primary-px;
+}
+
+.green {
+    color: $primary-color;
+}
+
+.green:hover {
+    color: $blue;
+}
+
+#map-container {
+    height: 450px;
+    width: 100%;
+    border-radius: $primary-px;
+    padding: $big-px;
+    margin: $big-px;
+}
+
+@media (max-width: 450px) {
+    #map-container {
+        height: 200px;
+    }
+}
+
+#contact h2 {
+    padding: $big-px;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.carousel-caption {
+    font-size: 2em;
+    background-color: fade-out($primary-text, 0.6);
+    border-radius: $big-px * 2;
+}
+
+.btn {
+    float: right;
+    border-radius: $primary-px
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.list-inline>li {
+    display: inline-block;
+    list-style: none;
+}
+
+.container {
+    margin-top: $big-px;
+}
+
+.container:before {
+    content: "";
+    display: block;
+    margin: -4em 0 0;
+    height: 4em;
+}
+
+.card {
+    width: 20rem;
+    border-radius: $big-px;
+}
+
+.card-img-top {
+    border-radius: $primary-px;
+}
+
+footer {
+    background-color: $primary-color;
+    color: $dark;
+    padding: $primary-px;
+}
+
+footer a {
+    color: $dark;
+}
+
+footer a:hover {
+    color: $blue;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    border-color: $primary-color;
+}
